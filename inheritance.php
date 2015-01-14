@@ -20,7 +20,7 @@ class Tom extends Person{
 	function __construct($firstName, $lastName, $gender){
 		parent::__construct($firstName, $lastName);
 
-		$this->gender = $gender;
+	$this->gender = $gender;
 	}
 
 	function greet(){
@@ -31,7 +31,8 @@ class Tom extends Person{
 class hair extends Person{
 	function __construct($firstName, $lastName, $hairColor){
 		parent::__construct($firstName, $lastName);
-		$this->hairColor = $hairColor;
+
+	$this->hairColor = $hairColor;
 	}
 	function hello(){
 		return " and has " . $this->hairColor . " hair";
@@ -62,9 +63,10 @@ class Animal{
 
 class fish extends Animal{
 	function __construct($color, $name, $gender){
-		parent::__construct($color, $name) {
-			$this->gender = $gender;
-		}
+		parent::__construct($color, $name);
+		
+		$this->gender = $gender;
+		
 	}
 
 	function hey2(){
@@ -74,9 +76,9 @@ class fish extends Animal{
 
 class bird extends Animal{
 	function __construct($color, $name, $size){
-		parent::__construct($firstName, $lastName){
-			$this->size = $size;
-		}
+		parent::__construct($firstName, $lastName);
+	
+		$this->size = $size;
 	}
 
 	function hey3(){
@@ -106,9 +108,9 @@ class House{
 }
 class OneHouse extends House{
 	function __construct($color, $numberOfBedrooms, $bathRooms){
-		parent::__construct($color, $numberOfBedrooms){
-			$this->bathRooms = $bathRooms;
-		}
+		parent::__construct($color, $numberOfBedrooms);
+			
+		$this->bathRooms = $bathRooms;
 	}
 
 	function what2(){
@@ -118,9 +120,9 @@ class OneHouse extends House{
 
 class AnotherHouse extends House{
 	function __construct($color, $numberOfBedrooms, $interiorColor){
-		parent::__construct($color, $numberOfBedrooms){
-			$this->interiorColor = $interiorColor;
-		}
+		parent::__construct($color, $numberOfBedrooms);
+		
+		$this->interiorColor = $interiorColor;
 	}
 
 	function what3(){
